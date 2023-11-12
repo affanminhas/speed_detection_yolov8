@@ -132,7 +132,7 @@ while True:
 
     cv2.putText(frame,('goingup:-')+str(u),(60,130),cv2.FONT_HERSHEY_COMPLEX,0.8,(0,255,255),2)
     cv2.imshow("RGB", frame)
-    if cv2.waitKey(1)&0xFF==27:
+    if cv2.waitKey(0)&0xFF==27:
         break
 cap.release()
 cv2.destroyAllWindows()
